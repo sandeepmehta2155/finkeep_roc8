@@ -1,0 +1,285 @@
+.App {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  h1,
+  h2 {
+    margin: 0;
+  }
+  
+  /* // SIDE NAV */
+  .sideNavBar {
+    position: relative;
+    top: 3rem;
+    -webkit-align-items: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    -webkit-border-radius: 0 25px 25px 0;
+    border-radius: 0 25px 25px 0;
+    color: #202124;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    letter-spacing: 0.01785714em;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    height: 48px;
+    width: 25%;
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+    overflow: hidden;
+  }
+  .sideNavBar:hover {
+    background-color: lightgray;
+    width: 20%;
+  }
+  
+  .svgImg {
+    width: 2rem;
+    margin-right: 1.2rem;
+    height: 2rem;
+  }
+  
+  /* Headers */
+  
+  .options {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+  }
+  
+  .keepImg {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 0.4rem;
+    left: 3rem;
+  }
+  
+  .appName {
+    font-family: "Courier New", Courier, monospace;
+    position: fixed;
+    top: 0.5rem;
+    left: 7rem;
+    cursor: pointer;
+  }
+  
+  .bi-person {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+  .loginRoute {
+    position: fixed;
+    top: 2.7rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+  .darkModeSwitch {
+    position: fixed;
+    top: 1rem;
+    right: 4rem;
+  }
+  
+  .hrLine {
+    width: 100%;
+    height: 0.1rem;
+    background-color: gray;
+    position: fixed;
+    top: 3.8rem;
+  }
+  
+  /* Input Note Box */
+  
+  .createNotes {
+    border-radius: 0.4rem;
+    position: fixed;
+    top: 5rem;
+    left: 25%;
+  }
+  
+  .createNotesInput {
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    border: 1px solid white;
+    border-radius: 0.4rem;
+    height: 6%;
+    position: fixed;
+    left: 30%;
+    width: 40%;
+  }
+  
+  .bi-x-circle {
+    float: right;
+  }
+  
+  .emptyNotes {
+    height: 60%;
+    width: 60%;
+    position: absolute;
+    right: 0rem;
+    top: 15rem;
+  }
+  .takeNote {
+    position: relative;
+    top: 0.7rem;
+    left: 0.7rem;
+  }
+  
+  .bi-file-earmark-check,
+  .bi-pin-angle,
+  .bi-pin-angle-fill {
+    position: fixed;
+    top: 5.5rem;
+    left: 72%;
+  }
+  
+  .createNotesTitle,
+  .createTakeaNote {
+    border: 1px solid white;
+    width: 100%;
+    height: 3rem;
+    padding-inline-start: 1rem;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    border: 2px solid white;
+    outline: none;
+  }
+  .createTakeaNote {
+    height: 6rem;
+  }
+  
+  .createTakeaNote {
+    font-size: 0.9rem;
+  }
+  
+  .createNotesTitle {
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .bi-bell-fill,
+  .bi-palette-fill,
+  .closeButton,
+  .addButton {
+    padding: 0.5rem;
+    background-color: white;
+    border: 1px solid white;
+    position: fixed;
+    top: 12rem;
+    left: 30.8%;
+  }
+  
+  .bi-palette-fill {
+    left: 33.5%;
+  }
+  
+  .closeButton,
+  .addButton {
+    position: fixed;
+    top: 12.2rem;
+    left: 65%;
+  }
+  .addButton {
+    left: 62%;
+  }
+  
+  .bi-bell-fill:hover,
+  .bi-palette-fill:hover,
+  .closeButton:hover,
+  .addButton:hover {
+    background-color: lightgray;
+    border-radius: 1rem;
+  }
+  
+  /* Display Notes */
+  
+  .displayNotes {
+    width: 70%;
+    position: absolute;
+    top: 15rem;
+    left: 26%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  .noteTemplate {
+    border: 1px solid rgb(238, 234, 234);
+    width: 25%;
+    margin: 1rem;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    padding-inline-start: 1rem;
+  }
+  
+  /* LOGIN PAGE */
+  
+  .loginModal {
+    position: fixed;
+    top: 7rem;
+    left: 30%;
+  }
+  .loginModal input {
+    height: 2rem;
+    padding-inline-start: 1rem;
+    border-radius: 3rem;
+    outline: none;
+    border: 0.5px solid rgb(241, 194, 105);
+  }
+  
+  .loginModal input:focus {
+    box-shadow: 0 1px 2px 0 rgb(241, 194, 105), 0 1px 3px 2px rgb(241, 194, 105);
+  }
+  .loginHeading {
+    position: relative;
+    left: 30%;
+  }
+  
+  .todoImg {
+    position: fixed;
+    right: 0rem;
+    top: 15rem;
+    z-index: -1;
+  }
+  .loginButton,
+  .signupButton {
+    background-color: rgb(241, 194, 105);
+    color: white;
+    border: 1px solid rgb(241, 194, 105);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: 4rem;
+  }
+  .loginButton:hover,
+  .signupButton:hover {
+    box-shadow: 0 1px 2px 0 rgb(241, 194, 105), 0 1px 3px 2px rgb(241, 194, 105);
+    background-color: white;
+    color: orange;
+  }
+  
+  .loginButton {
+    float: left;
+    margin-left: 1rem;
+  }
+  
+  .signupButton {
+    float: right;
+    margin-right: 1rem;
+  }
+  
+  @media (max-width: 600px) {
+    .sideNavBar label {
+      display: none;
+    }
+  }
+  
